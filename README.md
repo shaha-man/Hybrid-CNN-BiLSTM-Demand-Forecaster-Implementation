@@ -22,6 +22,8 @@ You'll need Python 3 and the following libraries. The key machine learning libra
 
 ```bash
 pip install pandas numpy matplotlib scikit-learn tensorflow
+```
+
 
 ### 2. Execution
 
