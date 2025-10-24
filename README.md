@@ -14,7 +14,7 @@ The core architecture is a direct Python/TensorFlow implementation of the **Hybr
 
 ---
 
-## ⚙️ How to Run the Current Version
+## How to Run the Current Version
 
 ### 1. Prerequisites
 
@@ -32,6 +32,16 @@ pip install pandas numpy matplotlib scikit-learn tensorflow
 3. Set your desired Train (%) and Testing (%) ratios, then click "Train Model"
 
 ### 3. Issues
+
+This initial version succesfully implements the paper's core model but has known limitations that are being addressd to meet professional MLOps standards. The listed below critical issues are planned for the next updates:
+
+#### Data Leakage Prevention
+
+Data preprocessing - standartization and imputation are applied to the full dataset before splitting. This causes data leakage.
+
+#### Efficiency and Overfitting Control
+
+The model is trained for a fixed 100 epochs. This is actually inefficet and risks overfitting if the model converges very early.
 
 
 
